@@ -1,0 +1,138 @@
+.mainContainer {
+    background: url("../../assets/img/body.png") ;
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+header {
+    padding: 50px 70px;
+    font-size: 18pt;
+}
+
+.headerLink {
+    color: #e1c2f1;
+    font-size: 18pt;
+    font-family: Quicksand-Bold, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #e66a64;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+}
+
+header >a:not(:nth-child(1)) {
+    padding-left: 20px;
+}
+
+section {
+    padding: 0 70px 30px 70px;
+    color: #fbf6e4;
+    font-family: Quicksand-Bold, sans-serif;
+    font-weight: bold;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 13pt;
+}
+
+form >.inputWrapper:not(:nth-child(1))  {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    height: 42px;
+    width: 100%;
+    color: #fbf6e4;
+    background-color: #23ae92;
+    border: #fbf6e4;
+    font-family: Quicksand-Bold, sans-serif;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    color: #23ae92;
+    border-color: currentColor;
+    background-color: #fbf6e4;
+}
+
+footer {
+    padding: 0 70px 55px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputWrapper > input {
+    margin-top: 10px;
+    border: 2px solid #9581c6;
+    background-color: transparent;
+    color: #ffffff;
+    height: 42px;
+}
+
+.inputWrapper > input:focus {
+    outline: none;
+}
+
+.checkbox >span {
+    font-size: 13px;
+    font-family: Quicksand-Regular, sans-serif;
+}
+
+.footerLink {
+    color: #786fbc;
+    font-size: 13px;
+    font-family: Quicksand-Regular, sans-serif;
+    text-decoration: none;
+
+    position: relative;
+}
+
+.footerLink::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #4d40b5;
+    width: 100%;
+    bottom: -3px;
+    position: absolute;
+}
+
+a:hover {
+    color: #a9a9a9;
+}
+
+.checkbox input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    margin: 3px 5px 0 0;
+    padding: 0;
+    vertical-align: top;
+    outline: none;
+    transition: background 0.3s ease;
+    background: url("../../assets/img/bodyCheckBox.png");
+    cursor: pointer;
+}
+
+.checkbox input[type=checkbox]:checked {
+    background: url("../../assets/img/checkBoxTouch.png");
+}
+
+
+
